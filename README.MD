@@ -22,6 +22,7 @@ Windows (mingw-w64-x86_64) hosted cross toolchains.
 Можно использовать командную строку или окно терминала Visual Studio Code `Ctrl+~`
 ```
 qemu-system-aarch64w -M raspi3b -s -S
+!!!GitBash $ start qemu-system-aarch64w -M raspi3b -s -S
 ```
 Ключ -S ставит машину в останов сразу после запуска
 -s запуск gdb на порту 1234, сокращение от -gdb tcp::1234
