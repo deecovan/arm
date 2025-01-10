@@ -1,195 +1,75 @@
-<!DOCTYPE html>
-        <html>
-        <head>
-            <meta charset="UTF-8">
-            <title>arm GitHub repo</title>
-            <style>
-/* From extension vscode.github */
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\dmytr\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.15\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
 
-.vscode-dark img[src$=\#gh-light-mode-only],
-.vscode-light img[src$=\#gh-dark-mode-only],
-.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
-.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
-	display: none;
-}
-
-</style>
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
-<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
-<style>
-            body {
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
-                font-size: 14px;
-                line-height: 1.6;
-            }
-        </style>
-        <style>
-.task-list-item {
-    list-style-type: none;
-}
-
-.task-list-item-checkbox {
-    margin-left: -20px;
-    vertical-align: middle;
-    pointer-events: none;
-}
-</style>
-<style>
-:root {
-  --color-note: #0969da;
-  --color-tip: #1a7f37;
-  --color-warning: #9a6700;
-  --color-severe: #bc4c00;
-  --color-caution: #d1242f;
-  --color-important: #8250df;
-}
-
-</style>
-<style>
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-note: #2f81f7;
-    --color-tip: #3fb950;
-    --color-warning: #d29922;
-    --color-severe: #db6d28;
-    --color-caution: #f85149;
-    --color-important: #a371f7;
-  }
-}
-
-</style>
-<style>
-.markdown-alert {
-  padding: 0.5rem 1rem;
-  margin-bottom: 16px;
-  color: inherit;
-  border-left: .25em solid #888;
-}
-
-.markdown-alert>:first-child {
-  margin-top: 0
-}
-
-.markdown-alert>:last-child {
-  margin-bottom: 0
-}
-
-.markdown-alert .markdown-alert-title {
-  display: flex;
-  font-weight: 500;
-  align-items: center;
-  line-height: 1
-}
-
-.markdown-alert .markdown-alert-title .octicon {
-  margin-right: 0.5rem;
-  display: inline-block;
-  overflow: visible !important;
-  vertical-align: text-bottom;
-  fill: currentColor;
-}
-
-.markdown-alert.markdown-alert-note {
-  border-left-color: var(--color-note);
-}
-
-.markdown-alert.markdown-alert-note .markdown-alert-title {
-  color: var(--color-note);
-}
-
-.markdown-alert.markdown-alert-important {
-  border-left-color: var(--color-important);
-}
-
-.markdown-alert.markdown-alert-important .markdown-alert-title {
-  color: var(--color-important);
-}
-
-.markdown-alert.markdown-alert-warning {
-  border-left-color: var(--color-warning);
-}
-
-.markdown-alert.markdown-alert-warning .markdown-alert-title {
-  color: var(--color-warning);
-}
-
-.markdown-alert.markdown-alert-tip {
-  border-left-color: var(--color-tip);
-}
-
-.markdown-alert.markdown-alert-tip .markdown-alert-title {
-  color: var(--color-tip);
-}
-
-.markdown-alert.markdown-alert-caution {
-  border-left-color: var(--color-caution);
-}
-
-.markdown-alert.markdown-alert-caution .markdown-alert-title {
-  color: var(--color-caution);
-}
-
-</style>
-        
-        </head>
-        <body class="vscode-body vscode-light">
-            <h1 id="arm-github-repo">arm GitHub repo</h1>
-<p>copied from <a href="https://raw.githubusercontent.com/Zer0cul/Aarch64-Arithmetics/refs/heads/main/README.html">Zer0cul</a></p>
-<h1 id="два-плюс-два-на-голом-метале-без-ассемблера">Два плюс два на голом метале без ассемблера</h1>
-<h2 id="инструменты">Инструменты</h2>
-<p><a href="https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads">Aarch64 GNU compiler collection</a>
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="arm-github-repo">arm GitHub repo </h1>
+<p>copied from <a href="https://github.com/Zer0cul/Aarch64-Arithmetics/blob/main/README.md">Zer0cul</a></p>
+<h1 id="два-плюс-два-на-голом-метале-без-ассемблера">Два плюс два на голом метале без ассемблера </h1>
+<h2 id="инструменты">Инструменты </h2>
+<p><a href="https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads">Aarch64 GNU compiler collection</a><br>
 В данном случае я использую версию 14.1.</p>
-<p>Целевая (target) платформа -- Baremetal, скачивайте инструменты для вашей несущей платформы, в моем случае это
-Windows (mingw-w64-x86_64) hosted cross toolchains.
+<p>Целевая (target) платформа -- Baremetal, скачивайте инструменты для вашей несущей платформы, в моем случае это<br>
+Windows (mingw-w64-x86_64) hosted cross toolchains.<br>
 для 32-битной Windows следует выбрать Windows (mingw-w64-i686) hosted cross toolchains, этот набор будет работать и под 64-битной Windows. Важно выбрать правильную целевую архитектуру AArch64 bare-metal target (aarch64-none-elf). Я использую Raspberry Pi 3B в качестве цели поэтому выбор AArch64. Если попытаться испльзовать набор AArch32 для 64-битной архитектуры, то отладчик не сможет правльно интерпретировать данный.</p>
-<p>Для удобства возмём Visual Studio Code, плагин Native Debug, который реализует подключение gdb к эмулятору qemu
+<p>Для удобства возмём Visual Studio Code, плагин Native Debug, который реализует подключение gdb к эмулятору qemu<br>
 Ещё для удобства потребуется Hex Editor, есть плагин для Visual Studio Code, или можно использовать любой удобный для вас например HxD.</p>
-<p>Так же понадобиться эмулятор QEMU
+<p>Так же понадобиться эмулятор QEMU<br>
 <a href="https://qemu.weilnetz.de/w64/">QEMU для window 64</a></p>
-<p>Установите путь в системых переменных для запуска gdb и эмулятора qemu
-запускаем виртуальную машину
+<p>Установите путь в системых переменных для запуска gdb и эмулятора qemu<br>
+запускаем виртуальную машину<br>
 Можно использовать командную строку или окно терминала Visual Studio Code <code>Ctrl+~</code></p>
-<pre><code>qemu-system-aarch64w -M raspi3b -s -S
-</code></pre>
-<p>Ключ -S ставит машину в останов сразу после запуска
+<pre data-role="codeBlock" data-info="" class="language-text"><code>qemu-system-aarch64w -M raspi3b -s -S
+!!!GitBash $ start qemu-system-aarch64w -M raspi3b -s -S
+</code></pre><p>Ключ -S ставит машину в останов сразу после запуска<br>
 -s запуск gdb на порту 1234, сокращение от -gdb tcp::1234</p>
 <p>запускаем отладчик gdb</p>
-<pre><code>aarch64-none-elf-gdb
-</code></pre>
-<p>и подлючаемся к машине. В строке приглашения gdb набираем</p>
-<pre><code>target remote localhost:1234
-</code></pre>
-<p>:1234 это порт для отладки который используется отладчиком по умолчанию.
+<pre data-role="codeBlock" data-info="" class="language-text"><code>aarch64-none-elf-gdb
+</code></pre><p>и подлючаемся к машине. В строке приглашения gdb набираем</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>target remote localhost:1234
+</code></pre><p>:1234 это порт для отладки который используется отладчиком по умолчанию.<br>
 нормальным ответом отладчика будет</p>
-<pre><code>(gdb) target remote localhost:1234
+<pre data-role="codeBlock" data-info="" class="language-text"><code>(gdb) target remote localhost:1234
 Remote debugging using localhost:1234
 warning: No executable has been specified and target does not support
-determining executable automatically.  Try using the &quot;file&quot; command.
+determining executable automatically.  Try using the "file" command.
 0x0000000000000000 in ?? ()
-</code></pre>
-<p>Если будет другой ответ с предупреждением, то скорее всего вы использует gdb из другого набора, скорее всего это AArch32. Посмотрите список доступных архитектур gdb, выполнив в его командной строке команду</p>
-<pre><code>set architecture
-</code></pre>
-<p>нормальным ответом будет наличие архитектуры &quot;aarch64&quot;.</p>
-<pre><code>(gdb) set architecture
+</code></pre><p>Если будет другой ответ с предупреждением, то скорее всего вы использует gdb из другого набора, скорее всего это AArch32. Посмотрите список доступных архитектур gdb, выполнив в его командной строке команду</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>set architecture
+</code></pre><p>нормальным ответом будет наличие архитектуры "aarch64".</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>(gdb) set architecture
 Requires an argument. Valid arguments are aarch64, aarch64:llp64, aarch64:ilp32, aarch64:armv8-r, arm, armv2, armv2a, armv3, armv3m, armv4, armv4t, armv5, armv5t, armv5te, xscale, iwmmxt, iwmmxt2, armv5tej, armv6, armv6kz, armv6t2, armv6k, armv7, armv6-m, armv6s-m, armv7e-m, armv8-a, armv8-r, armv8-m.base, armv8-m.main, armv8.1-m.main, armv9-a, arm_any, auto.
-</code></pre>
-<p>Если нет, установите правльный набор для вашей несущей ОС
-Например для 64 разрядной виндовс правильный набор будет такой:
-Windows (mingw-w64-x86_64) hosted cross toolchains.
+</code></pre><p>Если нет, установите правльный набор для вашей несущей ОС<br>
+Например для 64 разрядной виндовс правильный набор будет такой:<br>
+Windows (mingw-w64-x86_64) hosted cross toolchains.<br>
 AArch64 bare-metal target (aarch64-none-elf)</p>
 <p>Набрав команду <code>info reg</code> в командной интерфейсе отладчика посмотрим состояние регистров.</p>
-<h2 id="два-плюс-два-на-константах">Два плюс Два на константах</h2>
-<p>Пусть наша первая программа будет складывать на константы загруженые в регистры.
-Пояснять как процессор выполняет команду за командой, увеличивая каждый раз адресс, выходит за рамки этого упражнения. Всё что вы должны помнить
-команды располагаються в памяти последовательно, от младших адресов к старшим, специальный регистр PC (Program Counter) указывает адрес следующей исполняемой команды.
-Aarch64 имеет 32 регистра общего назначения с именами x0-x30. Некоторые их этих регистров имеют особые функции, например, по соглашению в x0
+<h2 id="два-плюс-два-на-константах">Два плюс Два на константах </h2>
+<p>Пусть наша первая программа будет складывать на константы загруженые в регистры.<br>
+Пояснять как процессор выполняет команду за командой, увеличивая каждый раз адресс, выходит за рамки этого упражнения. Всё что вы должны помнить<br>
+команды располагаються в памяти последовательно, от младших адресов к старшим, специальный регистр PC (Program Counter) указывает адрес следующей исполняемой команды.<br>
+Aarch64 имеет 32 регистра общего назначения с именами x0-x30. Некоторые их этих регистров имеют особые функции, например, по соглашению в x0<br>
 содержится результат функции по возврату. В этом примере мы будем использовать регистры x0 и x1</p>
 <p>Алгоритм для программы выглядит следующим образом:</p>
 <ol>
@@ -199,37 +79,35 @@ Aarch64 имеет 32 регистра общего назначения с им
 <li>Останов</li>
 </ol>
 <p>На ассемблере программа будет выглядеть так:</p>
-<pre><code>MOV X0, #2
+<pre data-role="codeBlock" data-info="" class="language-text"><code>MOV X0, #2
 MOV X1, #2
 ADD X0, X0, X1
 HLT
-</code></pre>
-<p>Обратите внимание, на немного &quot;нестандартный&quot; синтаксис команды ADD, обычно, в языках ассемблера используються преемущественно два аргумента:
-источник и назначение. Здесь, первый аргумент --- Rd указывающий регистр назначения, тот в который будет помещён результат, два следующих это Rn и Rm, регистры в которых находятся слогаемые. В целом это удобно, так как можно оставить регистры аргументов без изменений. Это особенность архитектуры RISC, большое количество регистров и их можно использовать как память, в отличии от x86 архитектуры, где набор регистров общего назначения серьёзно ограничен до восьми и каждый регистр кроме арифметических функций играет определённую роль.
+</code></pre><p>Обратите внимание, на немного "нестандартный" синтаксис команды ADD, обычно, в языках ассемблера используються преемущественно два аргумента:<br>
+источник и назначение. Здесь, первый аргумент --- Rd указывающий регистр назначения, тот в который будет помещён результат, два следующих это Rn и Rm, регистры в которых находятся слогаемые. В целом это удобно, так как можно оставить регистры аргументов без изменений. Это особенность архитектуры RISC, большое количество регистров и их можно использовать как память, в отличии от x86 архитектуры, где набор регистров общего назначения серьёзно ограничен до восьми и каждый регистр кроме арифметических функций играет определённую роль.<br>
 Пусть вас не смущает Rd, Rn, Rm -- это имена которые используються в документации по архитектуре и обозначают регистр общего назначения (General Purpose Register), т.е вместо этих символических имен можно подставить один из 31 регистров x0-x30 разрядностью 64-бит, а взависимости от флага sf в команде можно использовать регистры w0-w30 разрядностью 32-бит. Физически это теже самые регистры только обработка данных в них выполяется на младших 32=х разрядах.</p>
 <p>#2 вероятно, вы догадались --- это обозначение константы, которая будет закодирована непосредственно в команде.</p>
 <p>Конечно, в этот момент можно использовать ассемблер и линковщик из набора GNU Compiler Collection, но это тема для другой главы.</p>
 <p>Кстати, x86 несовсем верное название, в документации Intel она обозначается как IA-32 и Intel64 для 32-х и 64-х разрядных режимов соотвественно.</p>
-<h3 id="транслируем-в-исполняемый-код">Транслируем в исполняемый код</h3>
-<p>Трансляция --- процесс перевода из одного языка в другой. Практически всегда выполняется один к одному без оптимизации.
-В данном случае четыре команды на языке ассемблера будут соответствовать четырём машинным инструкциям.
-Три главных вопроса при трансляции.
-Что? Куда? Как?
-Конечно в реальной жизни мы будем использовать транслятор ассемблера или компилятор языка С с последующей линковкой.
-Но в этом примере и нескольких следующих мы выполним трансляцию вручную, так сказать по-старинке, чтобы понять процесс в целом
+<h3 id="транслируем-в-исполняемый-код">Транслируем в исполняемый код </h3>
+<p>Трансляция --- процесс перевода из одного языка в другой. Практически всегда выполняется один к одному без оптимизации.<br>
+В данном случае четыре команды на языке ассемблера будут соответствовать четырём машинным инструкциям.<br>
+Три главных вопроса при трансляции.<br>
+Что? Куда? Как?<br>
+Конечно в реальной жизни мы будем использовать транслятор ассемблера или компилятор языка С с последующей линковкой.<br>
+Но в этом примере и нескольких следующих мы выполним трансляцию вручную, так сказать по-старинке, чтобы понять процесс в целом<br>
 и в последующем это вам поможет понять процесс компиляции и линковки и разобраться в соглашениях о вызовах.</p>
-<h4 id="что-----источник">Что? --- источник</h4>
+<h4 id="что---источник">Что? --- источник </h4>
 <p>Самый простой вопрос в этой троице. Имеем программу на языке ассемблера, которую нужно перенести в машинный код, для исполнения на эмуляторе.</p>
-<pre><code>MOV X0, #2
+<pre data-role="codeBlock" data-info="" class="language-text"><code>MOV X0, #2
 MOV X1, #2
 ADD X0,X0,X1
 HLT
-</code></pre>
-<h4 id="куда-----приемник">Куда? --- приемник</h4>
+</code></pre><h4 id="куда---приемник">Куда? --- приемник </h4>
 <p>Не буду вас утомлять, создавайте файл пустой файл kernel8.img и открывайте его в Hex редакторе. Raspberry Pi 3 имеет довольно сложный механизм загрузки, описание которого выходит за рамки этой главы. На данный момент необходимо знать что kernel8.img подразумевает активацию и исполнения кода в 64-битном -- нормальном режиме, а kernel7.img 32-битном режиме совместимости со предыдущими платформами и архитектурами ARMv7.</p>
 <p>Так как у нас четыре команды, забегая вперёд команды в AArch64 всегда имеют ширину слова (word), т.е 32 разряда. Поэтому смело добавляйте 16 байт всё заполняйте нулями. Забеuая вперед скажу, код из файла-образа kernel8.img загружается по адресу 0x80000 для Raspberry Pi 3</p>
-<h4 id="как-----инструмет">Как? --- инструмет</h4>
-<p>Информацию по регистрам и архитектуре можно получить по ссылке <a href="https://developer.arm.com/documentation/ddi0487/latest/">Arm Architecture Reference Manual for A-profile architecture</a>
+<h4 id="как---инструмет">Как? --- инструмет </h4>
+<p>Информацию по регистрам и архитектуре можно получить по ссылке <a href="https://developer.arm.com/documentation/ddi0487/latest/">Arm Architecture Reference Manual for A-profile architecture</a><br>
 <a href="https://developer.arm.com/documentation/ddi0602/2024-12/?lang=en">Справочник по иструкциям</a>, также доступен в документации по архитектуре. Веб-версия может оказаться более удобная для чтения и быстрой справки о команде.</p>
 <p>Следует обратить внимание на следующие разделы, я приведу строго необходимую информацию ниже</p>
 <ul>
@@ -247,186 +125,154 @@ HLT
 <li>31 регистр общеного назначения x0-x30 или w0-w30 64-бита и 32-бита соотвественно, на которых выполняються логические и арифметические операции. регистр X30 используется для связи с вызывающей процедурой. Регистр PC программно не досутпен содержит адрес выполняемой команды. может быть изменён только иструкциями ветвления или переходами по исключительным ситуациям. B1.2, C1.2.6.1</li>
 <li>Важно! Адресс команды должен быть выровнен на границу слова word, т.е. 32-бита. т.е. адрес команды, например,0х00000002 или 0х00000005 не допустим переход по такому адресу вызовет ислючение. B1.2,B2.8</li>
 <li>Все инструкции имеют ширину 32-бита, т.е. слово(word). И это обеспечивает соблюдение требований указаных в B1.2,B2.8, в случае когда одна команда идет за другой вам нет необходимости помнить о выравнивании.C1.1</li>
-<li>Самая сложная часть B2.9 Endian support, Instruction endian. прочитайте её три раза.
-<strong>Младший байт команды расположен по младшему адресу</strong>
-Здесь необходимы пояснения. Команда длиной 32-бита(word) состоит из 4 байт. Если вы откроете редактор HEX, то байты по будут расположены слева на право по возрастанию адресов. Если еще раз внимательно посмотрите на картинку Figure B2-2 Endianness relationships секция B2.9 Endian support, её нижнюю часть Little-endian memory system. то младший байт(B_A) команды окажется справа --- в самом младшем байте, а старший B_A+3 левее. В редакторе этот байт будет левее.
-Почему сложно? потому что при ручной трансляции вам постоянно надо переворачивать байты, и следить за границей байта, помнить, где старший бит предыдущего байта. И ещё
-<strong>&quot;Внутри&quot; байта биты не &quot;переварачиваются&quot;</strong>
+<li>Самая сложная часть B2.9 Endian support, Instruction endian. прочитайте её три раза.<br>
+<strong>Младший байт команды расположен по младшему адресу</strong><br>
+Здесь необходимы пояснения. Команда длиной 32-бита(word) состоит из 4 байт. Если вы откроете редактор HEX, то байты по будут расположены слева на право по возрастанию адресов. Если еще раз внимательно посмотрите на картинку Figure B2-2 Endianness relationships секция B2.9 Endian support, её нижнюю часть Little-endian memory system. то младший байт(B_A) команды окажется справа --- в самом младшем байте, а старший B_A+3 левее. В редакторе этот байт будет левее.<br>
+Почему сложно? потому что при ручной трансляции вам постоянно надо переворачивать байты, и следить за границей байта, помнить, где старший бит предыдущего байта. И ещё<br>
+<strong>"Внутри" байта биты не "переварачиваются"</strong><br>
 Довольно сложное и утомительное ментальное упражнение, когда вы его освоите мир перестанет быть прежним.</li>
 </ul>
 <p>Если вы сразу не поняли в чем сложность, не страшно! У нас целых 4 команды на которых мы потренируемся.</p>
 <p>Я предлагаю начать трансляцию с команды HLT, она простая, не содержит аргументов. после того как мы её переведем в машинный код, продублируем 4 раза, убедимся что трансляция выполнена правильно. После этого будем переписывать команду за командой, а последняя уже будет HLT.</p>
-<p>Если вы ещё не создали файл kernel8.img, то самое время это сделать. Если у вас Visual Studio Code c установленым плагином Hex Editor. Правой кнопкой на файле и открыть с помощью Hex Editor. Смело добавляйте 16 байт 0x00. и сохраняйте.
-Такая команда интерпретируются процессором как &quot;не определена&quot; UDF. Для удобства, лучше перевести режим редактирования со вставки на замену клавишей <code>Insert</code>, или справа внизу сменить insert на replace</p>
-<h5 id="начинаем-трансляцию-hlt">Начинаем трансляцию. HLT</h5>
-<p>Открываем раздел C6.2.150 HLT
+<p>Если вы ещё не создали файл kernel8.img, то самое время это сделать. Если у вас Visual Studio Code c установленым плагином Hex Editor. Правой кнопкой на файле и открыть с помощью Hex Editor. Смело добавляйте 16 байт 0x00. и сохраняйте.<br>
+Такая команда интерпретируются процессором как "не определена" UDF. Для удобства, лучше перевести режим редактирования со вставки на замену клавишей <code>Insert</code>, или справа внизу сменить insert на replace</p>
+<h5 id="начинаем-трансляцию-hlt">Начинаем трансляцию. HLT </h5>
+<p>Открываем раздел C6.2.150 HLT<br>
 или <a href="https://developer.arm.com/documentation/ddi0602/2024-12/Base-Instructions/HLT--Halt-instruction-?lang=en">HLT</a></p>
-<p>31	30	29	28	27	26	25	24	23	22	21	20	19	18	17	16	15	14	13	12	11	10	9	8	7	6	5	4	3	2	1	0
-1	1	0	1	0	1	0	0	0	1	0	imm16	                                                        0	0	0	0	0
+<p>31	30	29	28	27	26	25	24	23	22	21	20	19	18	17	16	15	14	13	12	11	10	9	8	7	6	5	4	3	2	1	0<br>
+1	1	0	1	0	1	0	0	0	1	0	imm16	                                                        0	0	0	0	0<br>
 opc		                                                                    op2	        LL</p>
-<p>imm16 в данном случае будет 0=0000 0000  0000 0000b
-будем декодировать справа налево, и результаты записывать в файл kernel8.img 16ричном виде.
+<p>imm16 в данном случае будет 0=0000 0000  0000 0000b<br>
+будем декодировать справа налево, и результаты записывать в файл kernel8.img 16ричном виде.<br>
 первые 8 бит слева (0-7) все равны 0 поэтому первый байт 0x00</p>
-<pre><code>00 
-</code></pre>
-<p>биты с 8-15 тоже равны нулю поэтому второй байт по адресу 0x01 будет равен нулю</p>
-<pre><code>00 00
-</code></pre>
-<p>третий байт команды биты с 16-23 уже содержат единички поэтому чтобы не запутаться переводим по полубайтам - по 4 бита
+<pre data-role="codeBlock" data-info="" class="language-text"><code>00 
+</code></pre><p>биты с 8-15 тоже равны нулю поэтому второй байт по адресу 0x01 будет равен нулю</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>00 00
+</code></pre><p>третий байт команды биты с 16-23 уже содержат единички поэтому чтобы не запутаться переводим по полубайтам - по 4 бита<br>
 16-19 равны нулю</p>
-<pre><code>00 00 ?0
-</code></pre>
-<p>я использую сначала запись в текстовый файл, символ '?' обозначает что старший полубайт ещё не транслирован. в целом можно сразу в тексте записать
+<pre data-role="codeBlock" data-info="" class="language-text"><code>00 00 ?0
+</code></pre><p>я использую сначала запись в текстовый файл, символ '?' обозначает что старший полубайт ещё не транслирован. в целом можно сразу в тексте записать<br>
 четыре байта для наглядности</p>
-<pre><code>00 00 ?0 ??
-</code></pre>
-<p>биты с 20 по 23 содержат 1 в 22 бите. 20 бит относится к imm16, который принят за 0 поэтому, старший полубайт будет 0x4, а промежуточный результат
+<pre data-role="codeBlock" data-info="" class="language-text"><code>00 00 ?0 ??
+</code></pre><p>биты с 20 по 23 содержат 1 в 22 бите. 20 бит относится к imm16, который принят за 0 поэтому, старший полубайт будет 0x4, а промежуточный результат<br>
 после трансляции трех байт</p>
-<pre><code>00 00 40 ??
-</code></pre>
-<p>остался последний четвертый байт команды по адресу 0x03. Кстати это адрес относительно начала файла, правльно даже будет сказать смещение.
-Биты команды с 24-31 тоже разобъем на полубайты младший 24-27 и старший 28-31
+<pre data-role="codeBlock" data-info="" class="language-text"><code>00 00 40 ??
+</code></pre><p>остался последний четвертый байт команды по адресу 0x03. Кстати это адрес относительно начала файла, правльно даже будет сказать смещение.<br>
+Биты команды с 24-31 тоже разобъем на полубайты младший 24-27 и старший 28-31<br>
 транслируем сначала младший 26 бит равен 1 остальные нули, т.е. 2^2=4</p>
-<pre><code>00 00 40 ?4
-</code></pre>
-<p>теперь старший полубайт биты с 28-31. 2^0 +2^2+2^3=13 или 0xD
+<pre data-role="codeBlock" data-info="" class="language-text"><code>00 00 40 ?4
+</code></pre><p>теперь старший полубайт биты с 28-31. 2^0 +2<sup>2+2</sup>3=13 или 0xD<br>
 И вот окончательный результат</p>
-<pre><code>00 00 40 D4
-</code></pre>
-<p>мы закодировали команду HLT для процессора, теперь скопируйте или наберите эти четыре байта ещё 4 раза. всего должно получиться 16 байт.
+<pre data-role="codeBlock" data-info="" class="language-text"><code>00 00 40 D4
+</code></pre><p>мы закодировали команду HLT для процессора, теперь скопируйте или наберите эти четыре байта ещё 4 раза. всего должно получиться 16 байт.<br>
 или одна строчка, обычно Hex редакторы традиционно выровнены на 16 байт.</p>
-<pre><code>00 00 40 D4 00 00 40 D4 00 00 40 D4 00 00 40 D4
-</code></pre>
-<p>Я предлагаю, перевести ещё одну команду, и приступить к проверке стенда. На текущий момент мы не сможем проверить правильность трансляции, да и смотреть особо не на что.</p>
-<h5 id="начинаем-трансляцию-mov-x0-2">Начинаем трансляцию. MOV X0, #2</h5>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>00 00 40 D4 00 00 40 D4 00 00 40 D4 00 00 40 D4
+</code></pre><p>Я предлагаю, перевести ещё одну команду, и приступить к проверке стенда. На текущий момент мы не сможем проверить правильность трансляции, да и смотреть особо не на что.</p>
+<h5 id="начинаем-трансляцию-mov-x0-2">Начинаем трансляцию. MOV X0, #2 </h5>
 <p>Следующаяя, а точнее первая наша команда это загрузка константы в регистр x0</p>
-<pre><code>MOV X0, #2
-</code></pre>
-<p>раздел C6.2.251 MOV (wide immediate)
-или
+<pre data-role="codeBlock" data-info="" class="language-text"><code>MOV X0, #2
+</code></pre><p>раздел C6.2.251 MOV (wide immediate)<br>
+или<br>
 <a href="https://developer.arm.com/documentation/ddi0602/2024-12/Base-Instructions/MOV--inverted-wide-immediate---Move-inverted-wide-immediate-value--an-alias-of-MOVN-?lang=en">MOV immidate</a></p>
-<p>Обратите внимание что imm16 можно загрузить только значение от 0 до 65535. т.е. константу 64 разряда
-такой командой не загрузишь. Впрочем можно загрузить со сдвигом влево, это я вам оставлю на поэкспериментировать
+<p>Обратите внимание что imm16 можно загрузить только значение от 0 до 65535. т.е. константу 64 разряда<br>
+такой командой не загрузишь. Впрочем можно загрузить со сдвигом влево, это я вам оставлю на поэкспериментировать<br>
 самостоятельно</p>
-<p>31	30	29	28	27	26	25	24	23	22	21	20	19	18	17	16	15	14	13	12	11	10	9	8	7	6	5	4	3	2	1	0
-sf	1	0	1	0	0	1	0	1	hw	    imm16	                                                        Rd
+<p>31	30	29	28	27	26	25	24	23	22	21	20	19	18	17	16	15	14	13	12	11	10	9	8	7	6	5	4	3	2	1	0<br>
+sf	1	0	1	0	0	1	0	1	hw	    imm16	                                                        Rd<br>
 opc</p>
-<p>Как видим тут есть ряд полей которые надо задать перед тем как кодировать
-imm16 - наша константа 2. биты 5-20 в битовом виде будет 0000000000000010b
-sf - флаг ширины 1 - регистры x0-x30 64-битные, 0 регистры w0-w30 32-битные
-hw - биты 21-22 указывающие на сколько бит будет произведён сдвиг, нам это не надо поэтому 00b
+<p>Как видим тут есть ряд полей которые надо задать перед тем как кодировать<br>
+imm16 - наша константа 2. биты 5-20 в битовом виде будет 0000000000000010b<br>
+sf - флаг ширины 1 - регистры x0-x30 64-битные, 0 регистры w0-w30 32-битные<br>
+hw - биты 21-22 указывающие на сколько бит будет произведён сдвиг, нам это не надо поэтому 00b<br>
 Rd - номер регистра назначения, буква d. будем грузить в X0 поэтому биты с 0-4 равны 0 = 00000b обратите внимание 5 бит(!)</p>
-<p>1101 0010  1000 0000  0000 0000  0100 0000b
+<p>1101 0010  1000 0000  0000 0000  0100 0000b<br>
 D2          80          00          40</p>
 <p>начнем справа налево, помним что команда всегда 4 байта(32 бита)</p>
-<pre><code>?? ?? ?? ?? 
-</code></pre>
-<p>первый байт младший полубайт 0-3, поле Rd = 0 0000b берём младшие 4 бита</p>
-<pre><code>?0 ?? ?? ??
-</code></pre>
-<p>первый байт, старший полубайт биты с 4-7. Здесь немного сложнее -- два поля: Rd и imm16. У нас остался старший бит в поле Rd записываем его в младший разряд, и промежуточный результат полубайта ???0b. и первые три младших бита из поля imm16=0000 0000 0000 0010b. младшие три бита это 010b записываем их вместо вопросов
+<pre data-role="codeBlock" data-info="" class="language-text"><code>?? ?? ?? ?? 
+</code></pre><p>первый байт младший полубайт 0-3, поле Rd = 0 0000b берём младшие 4 бита</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>?0 ?? ?? ??
+</code></pre><p>первый байт, старший полубайт биты с 4-7. Здесь немного сложнее -- два поля: Rd и imm16. У нас остался старший бит в поле Rd записываем его в младший разряд, и промежуточный результат полубайта ???0b. и первые три младших бита из поля imm16=0000 0000 0000 0010b. младшие три бита это 010b записываем их вместо вопросов<br>
 0100b=0x4 это значение старшего полубайта. Очень легко ошибиться.</p>
 <p>результат после трансляции первого байта команды</p>
-<pre><code>40 ?? ?? ??
-</code></pre>
-<p>давайте запишим остаток от imm16 в виде битов группируя по 4 для удобства чтения 0 0000 0000 0000. Как видите, у нас 3 нулевых полубайта.
+<pre data-role="codeBlock" data-info="" class="language-text"><code>40 ?? ?? ??
+</code></pre><p>давайте запишим остаток от imm16 в виде битов группируя по 4 для удобства чтения 0 0000 0000 0000. Как видите, у нас 3 нулевых полубайта.<br>
 Но не будем торопиться запишим пока второй байт биты 8-15</p>
-<pre><code>40 00 ?? ??
-</code></pre>
-<p>в imm16 нам осталось записать всего 5 бит 0 0000b. продолжим младшим полубайтом биты 16-19</p>
-<pre><code>40 00 ?0 ??
-</code></pre>
-<p>старший полубайт третьего байта команды биты 20-23. Внимательно, бит 23 равен 1, биты hw = 00b, и 20 бит самый старший бит от imm16 = 0b
+<pre data-role="codeBlock" data-info="" class="language-text"><code>40 00 ?? ??
+</code></pre><p>в imm16 нам осталось записать всего 5 бит 0 0000b. продолжим младшим полубайтом биты 16-19</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>40 00 ?0 ??
+</code></pre><p>старший полубайт третьего байта команды биты 20-23. Внимательно, бит 23 равен 1, биты hw = 00b, и 20 бит самый старший бит от imm16 = 0b<br>
 получается 2^3=1=0x8 запишим результат</p>
-<pre><code>40 00 80 ??
-</code></pre>
-<p>младший полубайт четвёртого байта биты 24-27 0010b=0x2</p>
-<pre><code>40 00 80 ?2
-</code></pre>
-<p>старший полубайт четвертого байта биты 28-31. Флаг sf=1 поэтому 1101b=0xD</p>
-<pre><code>40 00 80 D2
-</code></pre>
-<p>поздравляю, первая команда нашей программы закодирована. на текущий момент файл должен выглядеть так</p>
-<pre><code>40 00 80 D2 00 00 40 D4 00 00 40 D4 00 00 40 D4
-</code></pre>
-<p>Я предлагаю немного сократить тренировку, так как вторая команда отличается от первой номером регистра X1 который очевидно 0 0001b для поля Rd, остальные поля одинаковые
+<pre data-role="codeBlock" data-info="" class="language-text"><code>40 00 80 ??
+</code></pre><p>младший полубайт четвёртого байта биты 24-27 0010b=0x2</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>40 00 80 ?2
+</code></pre><p>старший полубайт четвертого байта биты 28-31. Флаг sf=1 поэтому 1101b=0xD</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>40 00 80 D2
+</code></pre><p>поздравляю, первая команда нашей программы закодирована. на текущий момент файл должен выглядеть так</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>40 00 80 D2 00 00 40 D4 00 00 40 D4 00 00 40 D4
+</code></pre><p>Я предлагаю немного сократить тренировку, так как вторая команда отличается от первой номером регистра X1 который очевидно 0 0001b для поля Rd, остальные поля одинаковые<br>
 и мы точно знаем что 0 бит не находиться на стыке полубайтов. поэтому для второй команды</p>
-<p>1101 0010  1000 0000  0000 0000  0100 0001b
+<p>1101 0010  1000 0000  0000 0000  0100 0001b<br>
 D2          80          00          41</p>
-<pre><code>MOV X1, #2
-</code></pre>
-<p>код команды выгядит вот так</p>
-<pre><code>41 00 80 D2
-</code></pre>
-<p>записываем команду файл kernerl8.img начиная со смещения 0x3,</p>
-<pre><code>40 00 80 D2 41 00 80 D2 00 00 40 D4 00 00 40 D4
-</code></pre>
-<p>Осталась одна команда, давайте проверим промежуточный результат</p>
-<h5 id="проверим-правильность-трансляции-через-gdb">Проверим правильность трансляции через gdb</h5>
-<p>Предполагаю, что вы настроили системные пути для qemu и gdb
-запустите два окна терминала в Visual Studio Code <code>Ctrl+~</code> или в командной строке
+<pre data-role="codeBlock" data-info="" class="language-text"><code>MOV X1, #2
+</code></pre><p>код команды выгядит вот так</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>41 00 80 D2
+</code></pre><p>записываем команду файл kernerl8.img начиная со смещения 0x3,</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>40 00 80 D2 41 00 80 D2 00 00 40 D4 00 00 40 D4
+</code></pre><p>Осталась одна команда, давайте проверим промежуточный результат</p>
+<h5 id="проверим-правильность-трансляции-через-gdb">Проверим правильность трансляции через gdb </h5>
+<p>Предполагаю, что вы настроили системные пути для qemu и gdb<br>
+запустите два окна терминала в Visual Studio Code <code>Ctrl+~</code> или в командной строке<br>
 в первом запустите эмулятор с указанием файла образа</p>
-<pre><code>qemu-system-aarch64 -M raspi3b -s -S -kernel kernel8.img
-</code></pre>
-<p>-s запустит поддержку gdb на стороне эмулятора
--S выполнит останов кода сразу по запуску эмулятора, это позволит перейти к отладке ядра
--kernel <image file> путь к файлу образа</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>qemu-system-aarch64 -M raspi3b -s -S -kernel kernel8.img
+</code></pre><p>-s запустит поддержку gdb на стороне эмулятора<br>
+-S выполнит останов кода сразу по запуску эмулятора, это позволит перейти к отладке ядра<br>
+-kernel <img file="" src=""> путь к файлу образа</p>
 <p>во втором окне запустите gdb</p>
-<pre><code>aarch64-none-elf-gdb
-</code></pre>
-<p>после этой команды вы увидите приглашение (gdb) для команд.</p>
-<p>давайти установим точки остановки для нашего файла
+<pre data-role="codeBlock" data-info="" class="language-text"><code>aarch64-none-elf-gdb
+</code></pre><p>после этой команды вы увидите приглашение (gdb) для команд.</p>
+<p>давайти установим точки остановки для нашего файла<br>
 в стартовой точке и в финальной, по адресам 0x80000 и 0x8000C</p>
-<pre><code>b *0x80000
+<pre data-role="codeBlock" data-info="" class="language-text"><code>b *0x80000
 b *0x8000C
-</code></pre>
-<p>добавим к выводу текущую команду в виде ассемблера, кстати добавив число перед i можно вывести несколько команд</p>
-<pre><code>display /i $pc
-</code></pre>
-<p>Подключимся к эмулятору командой</p>
-<pre><code>target remote localhost:1234
-</code></pre>
-<p>Вы увидите что-то вроде этого</p>
-<pre><code>Remote debugging using localhost:1234
+</code></pre><p>добавим к выводу текущую команду в виде ассемблера, кстати добавив число перед i можно вывести несколько команд</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>display /i $pc
+</code></pre><p>Подключимся к эмулятору командой</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>target remote localhost:1234
+</code></pre><p>Вы увидите что-то вроде этого</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Remote debugging using localhost:1234
 warning: No executable has been specified and target does not support
-determining executable automatically.  Try using the &quot;file&quot; command.
+determining executable automatically.  Try using the "file" command.
 0x0000000000000000 in ?? ()
 1: x/i $pc
 =&gt; 0x0: ldr     x0, 0x18
-</code></pre>
-<p>обратите внимание что эмулятор сейчас остановлен по адресу 0х00, помните ключ -S
+</code></pre><p>обратите внимание что эмулятор сейчас остановлен по адресу 0х00, помните ключ -S<br>
 выполните команду 'c' - continue, и если всё сделано как надо, и правильно выставлена точка останова на адресе 0x80000</p>
-<pre><code>c
-</code></pre>
-<p>вывод на экран должен быть следующий</p>
-<pre><code>(gdb) c
+<pre data-role="codeBlock" data-info="" class="language-text"><code>c
+</code></pre><p>вывод на экран должен быть следующий</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>(gdb) c
 Continuing.
 
 Thread 1 hit Breakpoint 1, 0x0000000000080000 in ?? ()
 1: x/i $pc
 =&gt; 0x80000:     mov     x0, #0x2                        // #2
-</code></pre>
-<p>Если вывод отличен от этого, решите проблему перед тем как двигаться дальше.
+</code></pre><p>Если вывод отличен от этого, решите проблему перед тем как двигаться дальше.<br>
 потенциальные проблемы:</p>
 <ul>
 <li>Эмулятор не остановился по адресу 0x80000 - проверьте установку контрольных точек.</li>
 <li>команда отличная от mov x0, #2, проверьте правильность трансляции и внесения данных. Два раза.</li>
 </ul>
-<p>Предположем, что всё хорошо и у вас получилось добиться такого же результата
+<p>Предположем, что всё хорошо и у вас получилось добиться такого же результата<br>
 давайте выполним эту команду на эмуляторе и посмотрим состояние регистров</p>
-<pre><code>stepi
-</code></pre>
-<p>сделает следующий вывод на экран, который означает что первая команда выполнена</p>
-<pre><code>(gdb) stepi
+<pre data-role="codeBlock" data-info="" class="language-text"><code>stepi
+</code></pre><p>сделает следующий вывод на экран, который означает что первая команда выполнена</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>(gdb) stepi
 0x0000000000080004 in ?? ()
 1: x/i $pc
 =&gt; 0x80004:     mov     x1, #0x2                        // #2
-</code></pre>
-<p>Проверьте что вторая команда выгядит так как задумывалось, и проверим состояние регистров командой</p>
-<pre><code>info reg
-</code></pre>
-<p>Как видим x0 содержит необходимую константу 2</p>
-<pre><code>(gdb) info reg
+</code></pre><p>Проверьте что вторая команда выгядит так как задумывалось, и проверим состояние регистров командой</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>info reg
+</code></pre><p>Как видим x0 содержит необходимую константу 2</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>(gdb) info reg
 x0             0x2                 2
 x1             0x0                 0
 x2             0x0                 0
@@ -436,9 +282,8 @@ x5             0x0                 0
 x6             0x0                 0
 x7             0x0                 0
 --Type &lt;RET&gt; for more, q to quit, c to continue without paging--
-</code></pre>
-<p>Давайте выполним вторую команду через <code>stepi</code> и посмотрим на состояние регистров</p>
-<pre><code>(gdb) stepi
+</code></pre><p>Давайте выполним вторую команду через <code>stepi</code> и посмотрим на состояние регистров</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>(gdb) stepi
 0x0000000000080008 in ?? ()
 1: x/i $pc
 =&gt; 0x80008:     add     x0, x0, x1
@@ -452,68 +297,58 @@ x5             0x0                 0
 x6             0x0                 0
 x7             0x0                 0
 --Type &lt;RET&gt; for more, q to quit, c to continue without paging--
-</code></pre>
-<p>Константы загружены в регистры. Вы можете закрыть отладчик, тогда вам придется устанавливать точки останова повторно, лучше оставить открытым</p>
-<h5 id="трансляция-последней-команды-add-x0x0x1">Трансляция последней команды ADD X0,X0,X1</h5>
-<p>Открываем главу в Arm® Architecture Reference Manual
-for A-profile architecture
-C6.2.6 ADD (shifted register)
-или по ссылке
+</code></pre><p>Константы загружены в регистры. Вы можете закрыть отладчик, тогда вам придется устанавливать точки останова повторно, лучше оставить открытым</p>
+<h5 id="трансляция-последней-команды-add-x0x0x1">Трансляция последней команды ADD X0,X0,X1 </h5>
+<p>Открываем главу в Arm® Architecture Reference Manual<br>
+for A-profile architecture<br>
+C6.2.6 ADD (shifted register)<br>
+или по ссылке<br>
 <a href="https://developer.arm.com/documentation/ddi0602/2024-12/Base-Instructions/ADD--shifted-register---Add-optionally-shifted-register-?lang=en">ADD (shifted register)</a></p>
-<p>31	30	29	28	27	26	25	24	23	22	21	20	19	18	17	16	15	14	13	12	11	10	9	8	7	6	5	4	3	2	1	0
-sf	0	0	0	1	0	1	1	shift	0	Rm	                imm6	                Rn	                Rd
-op	S	
-ADD X0,X0,X1
-1000 1011  0000 0001  0000 0000 0000 0000
+<p>31	30	29	28	27	26	25	24	23	22	21	20	19	18	17	16	15	14	13	12	11	10	9	8	7	6	5	4	3	2	1	0<br>
+sf	0	0	0	1	0	1	1	shift	0	Rm	                imm6	                Rn	                Rd<br>
+op	S	<br>
+ADD X0,X0,X1<br>
+1000 1011  0000 0001  0000 0000 0000 0000<br>
 8B         01         00        00</p>
-<p>ADD <Xd>, <Xn>, <Xm>{, <shift> #<amount>}</p>
-<p>Эта команда складывает регистры указаные в полях Rm и Rn помещая значение Rd, при этом опционально можно применить операцию сдвига ко второму операнду Rm.
-Здвигать нам не требуется поэтому
-sf = 1b используем 64-битные регистры x0-x30
-imm6 = 00 0000b количество бит сдвига
-shift = 00b логический сдвиг влево LSL, можно выбрать любой кроме зарезервированного. значение 00b проще кодировать поэтому не усложняем
-Rd - x0 регистр назначения 0 0000b
-Rn - x0 первый операнд 0 0000b
+<p>ADD <xd>, <xn>, <xm>{, <shift> #<amount>}</amount></shift></xm></xn></xd></p>
+<p>Эта команда складывает регистры указаные в полях Rm и Rn помещая значение Rd, при этом опционально можно применить операцию сдвига ко второму операнду Rm.<br>
+Здвигать нам не требуется поэтому<br>
+sf = 1b используем 64-битные регистры x0-x30<br>
+imm6 = 00 0000b количество бит сдвига<br>
+shift = 00b логический сдвиг влево LSL, можно выбрать любой кроме зарезервированного. значение 00b проще кодировать поэтому не усложняем<br>
+Rd - x0 регистр назначения 0 0000b<br>
+Rn - x0 первый операнд 0 0000b<br>
 Rm - x0 второй операнд 0 0001b</p>
 <p>первый байт биты 0-7 поля Rd, Rn 0000 0000b, старшие биты поля Rn 00b будут задействованы в следующем байте</p>
-<pre><code>00 ?? ?? ??
-</code></pre>
-<p>второй байт биты 8-15 старшие два бита поля Rn=00b и 6 бит поля imm6=00 0000b  в результате 0000 0000b</p>
-<pre><code>00 00 ?? ??
-</code></pre>
-<p>третий байт, биты 16-23 младшие 5 бит поле Rm=0 0001b, 21 бит =0, и shift = 00b</p>
-<pre><code>00 00 01 ??
-</code></pre>
-<p>четвёртый байт биты 24-31  поле sf=1b и заданные значения 1000 1011b=0x8B</p>
-<pre><code>00 00 01 8B
-</code></pre>
-<p>Записываем полученые байты в файл kernel8.img начиная со смещения 0x8</p>
-<pre><code>40 00 80 D2 41 00 80 D2 00 00 01 8B 00 00 40 D4
-</code></pre>
-<p>В общем, это всё наши четыре команды программы на языке ассемблера оттранслированы вручную в четыре команды каждая 32-бита шириной, всего 16 байт</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>00 ?? ?? ??
+</code></pre><p>второй байт биты 8-15 старшие два бита поля Rn=00b и 6 бит поля imm6=00 0000b  в результате 0000 0000b</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>00 00 ?? ??
+</code></pre><p>третий байт, биты 16-23 младшие 5 бит поле Rm=0 0001b, 21 бит =0, и shift = 00b</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>00 00 01 ??
+</code></pre><p>четвёртый байт биты 24-31  поле sf=1b и заданные значения 1000 1011b=0x8B</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>00 00 01 8B
+</code></pre><p>Записываем полученые байты в файл kernel8.img начиная со смещения 0x8</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>40 00 80 D2 41 00 80 D2 00 00 01 8B 00 00 40 D4
+</code></pre><p>В общем, это всё наши четыре команды программы на языке ассемблера оттранслированы вручную в четыре команды каждая 32-бита шириной, всего 16 байт</p>
 <p>Остаётся только проверить результат через gdb.</p>
-<h3 id="проверка-финального-результата">Проверка финального результата</h3>
+<h3 id="проверка-финального-результата">Проверка финального результата </h3>
 <p>закройте эмулятор если он у вас открыт, и запустите новый с обновлым фалом kernel8.img</p>
-<pre><code> qemu-system-aarch64w -M raspi3b -s -S -kernel kernel8.img
-</code></pre>
-<p>переключитесь в окно gdb и выполните переподключение к эмулятору</p>
-<pre><code>target remote localhost:1234
-</code></pre>
-<p>на предложение остановить текущую отладку ответье y
+<pre data-role="codeBlock" data-info="" class="language-text"><code> qemu-system-aarch64w -M raspi3b -s -S -kernel kernel8.img
+</code></pre><p>переключитесь в окно gdb и выполните переподключение к эмулятору</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>target remote localhost:1234
+</code></pre><p>на предложение остановить текущую отладку ответье y<br>
 Если вы не закрывали окно отладчика, то точки останова у вас остануться, если вы отрыли отладчик заново то необходимо устаность точки останова командой <code>b</code></p>
-<pre><code>b *0x80000
+<pre data-role="codeBlock" data-info="" class="language-text"><code>b *0x80000
 b *0x8000C
-</code></pre>
-<p>запускаем эмулятор командой <code>c</code> до первой точки останова по адресу 0x80000</p>
-<pre><code>(gdb) c
+</code></pre><p>запускаем эмулятор командой <code>c</code> до первой точки останова по адресу 0x80000</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>(gdb) c
 Continuing.
 
 Thread 1 hit Breakpoint 1, 0x0000000000080000 in ?? ()
 1: x/i $pc
 =&gt; 0x80000:     mov     x0, #0x2                        // #2
-</code></pre>
-<p>Выполните 3 раза stepi, проверяйте правильность трансляции команды</p>
-<pre><code>Thread 1 hit Breakpoint 1, 0x0000000000080000 in ?? ()
+</code></pre><p>Выполните 3 раза stepi, проверяйте правильность трансляции команды</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Thread 1 hit Breakpoint 1, 0x0000000000080000 in ?? ()
 1: x/i $pc
 =&gt; 0x80000:     mov     x0, #0x2                        // #2
 (gdb) stepi
@@ -530,9 +365,8 @@ Thread 1 hit Breakpoint 2, 0x000000000008000c in ?? ()
 1: x/i $pc
 =&gt; 0x8000c:     hlt     #0x0
 (gdb)
-</code></pre>
-<p>и финальный резултат командой info reg</p>
-<pre><code>(gdb) info reg
+</code></pre><p>и финальный резултат командой info reg</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>(gdb) info reg
 x0             0x4                 4
 x1             0x2                 2
 x2             0x0                 0
@@ -545,19 +379,17 @@ x8             0x0                 0
 x9             0x0                 0
 x10            0x0                 0
 --Type &lt;RET&gt; for more, q to quit, c to continue without paging--
-</code></pre>
-<p>X0 содержит 0х4, что соотвествует задумке написанной программы</p>
-<pre><code>MOV X0, #2
+</code></pre><p>X0 содержит 0х4, что соотвествует задумке написанной программы</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>MOV X0, #2
 MOV X1, #2
 ADD X0,X0,X1
 HLT
-</code></pre>
-<p>Которая складывает две константы
+</code></pre><p>Которая складывает две константы<br>
 Х1 содержит 0х2,  это один из аргументов загруженный второй командой</p>
-<h2 id="заключение">Заключение</h2>
-<p>На заре развития вычислительной техники процесс выглядел примерно так, только у них не было отладчиков и эмуляторов.
-Каждый день вряд ли придётся заниматься подобной активностью. Знание процесса и инструментов будет точно не лишним.
-А самое главное эти знания и навыки переносяться на любую платформу с которой вам предстоит работать. AArch64 выбрана
+<h2 id="заключение">Заключение </h2>
+<p>На заре развития вычислительной техники процесс выглядел примерно так, только у них не было отладчиков и эмуляторов.<br>
+Каждый день вряд ли придётся заниматься подобной активностью. Знание процесса и инструментов будет точно не лишним.<br>
+А самое главное эти знания и навыки переносяться на любую платформу с которой вам предстоит работать. AArch64 выбрана<br>
 по причине удобства работы и потому что она одна из наиболее актуальных платформ на момент написания.</p>
 <p>Какие знания мы получили:</p>
 <ol>
@@ -565,9 +397,9 @@ HLT
 <li>Как переводить программу в машинный код вручную без ассемблера</li>
 <li>Работу с отладчиком: как устанавливать точки останова, смотреть регистры, подключаться к платформе</li>
 </ol>
-<h2 id="материалы-руководства-и-ссылки-на-инструменты">Материалы, руководства и ссылки на инструменты</h2>
+<h2 id="материалы-руководства-и-ссылки-на-инструменты">Материалы, руководства и ссылки на инструменты </h2>
 <p>Репозиторий с этим текстом <a href="https://github.com/Zer0cul/Aarch64-Arithmetics">Git Hub</a></p>
-<h3 id="использованые-инструменты">Использованые инструменты</h3>
+<h3 id="использованые-инструменты">Использованые инструменты </h3>
 <ul>
 <li><a href="https://www.qemu.org/download/#windows">Загрузка QEMU</a></li>
 <li><a href="https://qemu.weilnetz.de/w64/">QEMU для window 64</a></li>
@@ -578,18 +410,17 @@ HLT
 <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
 <li>Hex Editor plugin for VS Code идентефикатор ms-vscode.hexeditor</li>
 </ul>
-<h3 id="руководства-и-справочники">Руководства и справочники</h3>
+<h3 id="руководства-и-справочники">Руководства и справочники </h3>
 <ul>
 <li><a href="https://developer.arm.com/documentation/ddi0487/latest/">Arm Architecture Reference Manual for A-profile architecture</a> - Справочное руководство по архитектуре, в формате pdf</li>
 <li><a href="https://developer.arm.com/documentation/ddi0602/2024-12/?lang=en">Справочник по иструкциям AArch64</a></li>
 <li><a href="https://developer.arm.com/documentation/102374/0102">Learn the architecture - A64 Instruction Set Architecture Guide</a> - обучения командам c примерами и задачами на проверку знаний</li>
 </ul>
-<h3 id="команды-gdb">Команды gdb</h3>
+<h3 id="команды-gdb">Команды gdb </h3>
 <p>запуск gdb</p>
-<pre><code> aarch64-none-elf-gdb
-</code></pre>
-<p>Использованые команды gdb</p>
-<pre><code>set architecture
+<pre data-role="codeBlock" data-info="" class="language-text"><code> aarch64-none-elf-gdb
+</code></pre><p>Использованые команды gdb</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>set architecture
 b *0x80000
 b *0x8000C
 info reg
@@ -599,16 +430,20 @@ stepi
 target remote localhost:1234
 c
 continue
-</code></pre>
-<h3 id="запуск-эмулятора">Запуск эмулятора</h3>
+</code></pre><h3 id="запуск-эмулятора">Запуск эмулятора </h3>
 <p>без образа, с остановом и поддержкой gdb</p>
-<pre><code>qemu-system-aarch64w -M raspi3b -s -S
+<pre data-role="codeBlock" data-info="" class="language-text"><code>qemu-system-aarch64w -M raspi3b -s -S
+</code></pre><p>с образом с остановом</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>qemu-system-aarch64w -M raspi3b -s -S -kernel kernel8.img
 </code></pre>
-<p>с образом с остановом</p>
-<pre><code>qemu-system-aarch64w -M raspi3b -s -S -kernel kernel8.img
-</code></pre>
-
-            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
-            
-        </body>
-        </html>
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
